@@ -1,0 +1,2 @@
+# Value
+For $A1 = 12 To 11 + $Total          For $B1 = 1 To ($oExcel.Application.Cells($A1,6).Value)   ; This value is from the Excel file. It can be from 1 - 9.                      For $N1 = 7 To ???  ; This is based on the value of $B1 ((1 = 7, 2 = 17, 3 = 27, 4 = 37, 5 = 47)                             Send("-"&amp; ($oExcel.Application.Cells($A1,$N1).Value) &amp;"/"&amp; ($oExcel.Application.Cells($A1,$N1+1).Value))             Sleep(400)             Send("{ENTER}")             Sleep(700)         Next     Next Next
